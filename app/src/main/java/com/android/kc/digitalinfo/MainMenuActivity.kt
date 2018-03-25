@@ -11,12 +11,13 @@ import android.widget.TextView
 import android.widget.Toast
 import com.android.kc.digitalinfo.adapter.menuAdapter
 import com.android.kc.digitalinfo.adapter.opAdapter
+import com.android.kc.digitalinfo.modul.pojo
 import kotlinx.android.synthetic.main.activity_main_menu.*
 
 class MainMenuActivity : AppCompatActivity() {
 
     //list event
-    private val eventList = ArrayList<DataPojo>()
+    private val eventList = ArrayList<pojo>()
 
     //operator
     val listOp: ArrayList<String> = ArrayList()
@@ -51,9 +52,9 @@ class MainMenuActivity : AppCompatActivity() {
         recyclerView.addOnItemTouchListener(
                 RecyclerItemClickListener(this, object : RecyclerItemClickListener.OnItemClickListener {
                     override fun onItemClick(view: View, position: Int) {
-                        mInstansi = eventList.get(position).getTitle()
-                        mTema = eventList.get(position).getTema()
-                        mKeterangan = eventList.get(position).getTema()
+                        mInstansi = eventList.get(position).title
+                        mTema = eventList.get(position).tema
+                        mKeterangan = eventList.get(position).tema
                         initDialogLoading()
                     }
                 })
@@ -61,22 +62,22 @@ class MainMenuActivity : AppCompatActivity() {
     }
 
     private fun EventData() {
-        var movie = DataPojo("PT. Ammase Sejati", "10/12/2018", "Before using CoordinatorLayout in your app, you must import the Android Support Design Library into your project, by adding the following dependency", "Ballroom Lt 6", "2")
+        var movie = pojo("PT. Ammase Sejati", "10/12/2018", "Before using CoordinatorLayout in your app, you must import the Android Support Design Library into your project, by adding the following dependency", "Ballroom Lt 6", "2")
         eventList.add(movie)
 
-        movie = DataPojo("CV Toko Koding Cupu", "10/12/2018", "Before using CoordinatorLayout in your app, you must import the Android Support Design Library into your project, by adding the following dependency to your app build.gradle file", "Ballroom Lt 6", "20/03/2018")
+        movie = pojo("CV Toko Koding Cupu", "10/12/2018", "Before using CoordinatorLayout in your app, you must import the Android Support Design Library into your project, by adding the following dependency to your app build.gradle file", "Ballroom Lt 6", "20/03/2018")
         eventList.add(movie)
 
-        movie = DataPojo("PT. Ammmse Sejati", "11/12/2018", "Before using CoordinatorLayout in your app, you must import the Android Support Design Library into your project, by adding the following dependency to your app build.gradle file", "Ballroom Lt 17", "20/03/2018")
+        movie = pojo("PT. Ammmse Sejati", "11/12/2018", "Before using CoordinatorLayout in your app, you must import the Android Support Design Library into your project, by adding the following dependency to your app build.gradle file", "Ballroom Lt 17", "20/03/2018")
         eventList.add(movie)
 
-        movie = DataPojo("PT. Ammmse Sejati", "12/12/2018", "Before using CoordinatorLayout in your app, you must import the Android Support Design Library into your project, by adding the following dependency to your app build.gradle file", "Condotel 2 Lt 7", "20/03/2018")
+        movie = pojo("PT. Ammmse Sejati", "12/12/2018", "Before using CoordinatorLayout in your app, you must import the Android Support Design Library into your project, by adding the following dependency to your app build.gradle file", "Condotel 2 Lt 7", "20/03/2018")
         eventList.add(movie)
 
-        movie = DataPojo("PT. Ammase Sejati", "13/12/2018", "Before using CoordinatorLayout in your app, you must import the Android Support Design Library into your project, by adding the following dependency to your app build.gradle file", "Condotel 2 Lt 3", "20/03/2018")
+        movie = pojo("PT. Ammase Sejati", "13/12/2018", "Before using CoordinatorLayout in your app, you must import the Android Support Design Library into your project, by adding the following dependency to your app build.gradle file", "Condotel 2 Lt 3", "20/03/2018")
         eventList.add(movie)
 
-        movie = DataPojo("PT. Ammase Sejati", "14/12/2018", "Before using CoordinatorLayout in your app, you must import the Android Support Design Library into your project, by adding the following dependency to your app build.gradle file", "Condotel 2 Lt 5", "20/03/2018")
+        movie = pojo("PT. Ammase Sejati", "14/12/2018", "Before using CoordinatorLayout in your app, you must import the Android Support Design Library into your project, by adding the following dependency to your app build.gradle file", "Condotel 2 Lt 5", "20/03/2018")
         eventList.add(movie)
     }
 

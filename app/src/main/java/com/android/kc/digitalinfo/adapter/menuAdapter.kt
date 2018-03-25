@@ -5,15 +5,15 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.view.View
-import com.android.kc.digitalinfo.DataPojo
 import com.android.kc.digitalinfo.R
+import com.android.kc.digitalinfo.modul.pojo
 import kotlinx.android.synthetic.main.item_list_info.view.*
 
 
 /**
  * Created by programmer on 3/25/18.
  */
-class menuAdapter (val items: ArrayList<DataPojo>, val context: Context) : RecyclerView.Adapter<ViewHolder> (){
+class menuAdapter (val items: ArrayList<pojo>, val context: Context) : RecyclerView.Adapter<ViewHolder> (){
     // Gets the number of animals in the list
     override fun getItemCount(): Int {
         return items.size
