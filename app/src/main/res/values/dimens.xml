@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="set_size_margin_small">3dp</dimen>
+    <dimen name="set_size_margin_medium">8dp</dimen>
+    <dimen name="set_size_margin_large">12dp</dimen>
+    <dimen name="set_size_margin_extra_large">16dp</dimen>
+    <dimen name="set_size_margin">20dp</dimen>
+
+    <dimen name="set_size_dialog_minWidth">300dp</dimen>
+</resources>

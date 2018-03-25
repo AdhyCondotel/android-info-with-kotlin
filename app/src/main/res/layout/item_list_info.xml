@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/set_size_margin_small"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutActionClick"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="@dimen/set_size_margin"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/set_size_margin_medium">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Title Event : PT. Ammmase Sejati" />
+
+        <TextView
+            android:id="@+id/textViewRoom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/set_size_margin_small"
+            android:text="Room : BallRoom LT 6"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textViewTglEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date : 10/10/2018  -  12/10/2018"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textViewTema"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:gravity="left|end"
+            android:maxLines="2"
+            android:text="These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/textViewUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="1"
+            android:gravity="end"
+            android:maxLines="1"
+            android:textSize="12sp"
+            tools:text="Update : 12/12/2018" />
+
+    </LinearLayout>
+
+    <com.hosamazzam.customviews.RoundCornerImageView
+        android:id="@+id/imageViewProfile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right|top"
+        android:layout_marginRight="@dimen/set_size_margin_medium"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image1"
+        app:cornerRadius="90" />
+
+</FrameLayout>
